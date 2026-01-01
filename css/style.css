@@ -124,6 +124,77 @@
     transform: translateY(0);
 }
 
+/* ===== Floating Animation ===== */
+.floating-icon {
+    animation: floatingIcon 3s ease-in-out infinite;
+}
+
+@keyframes floatingIcon {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+/* ===== Shimmer Effect ===== */
+.shimmer {
+    background: linear-gradient(
+        90deg,
+        var(--surface) 0%,
+        var(--surface-light) 50%,
+        var(--surface) 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+
+/* ===== Glow Pulse Animation ===== */
+.glow-pulse {
+    animation: glowPulse 2s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+    0%, 100% { box-shadow: 0 0 20px rgba(102, 126, 234, 0.3); }
+    50% { box-shadow: 0 0 40px rgba(102, 126, 234, 0.6); }
+}
+
+/* ===== Bounce Animation ===== */
+.bounce-hover:hover {
+    animation: bounceOnce 0.5s ease;
+}
+
+@keyframes bounceOnce {
+    0%, 100% { transform: translateY(0); }
+    25% { transform: translateY(-10px); }
+    50% { transform: translateY(-5px); }
+    75% { transform: translateY(-8px); }
+}
+
+/* ===== Spin Animation for icons ===== */
+.spin-slow {
+    animation: spinSlow 10s linear infinite;
+}
+
+@keyframes spinSlow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* ===== Typewriter Effect (for hero text) ===== */
+.typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(30, end);
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
 /* ===== Reset & Base ===== */
 *, *::before, *::after {
     margin: 0;
@@ -1002,7 +1073,11 @@ section {
 /* ===== Privacy Section ===== */
 .privacy-section {
     background: var(--surface);
-    padding: 80px 0;
+    padding: 100px 0;
+}
+
+.privacy-section .section-header {
+    color: var(--text-primary);
 }
 
 .privacy-card {
@@ -1014,15 +1089,22 @@ section {
     border-radius: var(--radius-xl);
     border: 1px solid rgba(16, 185, 129, 0.2);
     box-shadow: 0 0 60px rgba(16, 185, 129, 0.1);
+    transition: var(--transition);
+}
+
+.privacy-card:hover {
+    border-color: rgba(16, 185, 129, 0.4);
+    box-shadow: 0 0 80px rgba(16, 185, 129, 0.15);
 }
 
 .privacy-icon {
     font-size: 4rem;
     margin-bottom: 24px;
+    display: inline-block;
 }
 
 .privacy-card h2 {
-    font-size: 2rem;
+    font-size: 1.75rem;
     margin-bottom: 12px;
 }
 
@@ -1046,6 +1128,12 @@ section {
     padding: 16px;
     background: var(--surface);
     border-radius: var(--radius-md);
+    transition: var(--transition);
+}
+
+.privacy-point:hover {
+    transform: translateX(8px);
+    background: var(--surface-light);
 }
 
 .privacy-point svg {
