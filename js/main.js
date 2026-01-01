@@ -1,3 +1,38 @@
+// ===== Page Loader =====
+window.addEventListener('load', () => {
+    const loader = document.getElementById('pageLoader');
+    const body = document.body;
+    
+    // Hide loader after a brief delay
+    setTimeout(() => {
+        if (loader) {
+            loader.classList.add('hidden');
+        }
+        body.classList.remove('loading');
+        
+        // Trigger reveal animations after page load
+        revealOnScroll();
+    }, 500);
+});
+
+// ===== Scroll Reveal Animation =====
+function revealOnScroll() {
+    const reveals = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale, .stagger-children');
+    
+    reveals.forEach(element => {
+        const windowHeight = window.innerHeight;
+        const elementTop = element.getBoundingClientRect().top;
+        const revealPoint = 100;
+        
+        if (elementTop < windowHeight - revealPoint) {
+            element.classList.add('active');
+        }
+    });
+}
+
+// Run on scroll
+window.addEventListener('scroll', revealOnScroll);
+
 // ===== Mobile Navigation Toggle =====
 const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
 const navLinks = document.querySelector('.nav-links');
