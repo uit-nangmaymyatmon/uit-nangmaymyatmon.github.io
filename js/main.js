@@ -437,7 +437,7 @@ window.addEventListener('scroll', throttle(() => {
 
 // ===== Initialize on DOM Ready =====
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('Kung Myat Portfolio - Initialized ✨');
+    console.log('Kung Mya Portfolio - Initialized ✨');
     
     // Add loaded class for any CSS animations
     document.body.classList.add('loaded');
