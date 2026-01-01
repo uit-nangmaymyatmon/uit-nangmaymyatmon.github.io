@@ -967,6 +967,28 @@ section {
     font-size: 1rem;
 }
 
+/* Privacy Note */
+.privacy-note {
+    margin-top: 16px;
+}
+
+.privacy-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    transition: var(--transition);
+}
+
+.privacy-link:hover {
+    color: var(--primary);
+}
+
+.privacy-link svg {
+    flex-shrink: 0;
+}
+
 /* Screenshots Carousel */
 .app-screenshots {
     display: flex;
