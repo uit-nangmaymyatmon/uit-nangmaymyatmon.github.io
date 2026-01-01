@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 520" width="260" height="520">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A2E"/>
+      <stop offset="100%" style="stop-color:#0D0D1A"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667EEA"/>
+      <stop offset="100%" style="stop-color:#764BA2"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="260" height="520" rx="32" fill="url(#bg)"/>
+  
+  <!-- Status bar -->
+  <text x="20" y="30" fill="#888" font-family="Inter, sans-serif" font-size="12">9:41</text>
+  <circle cx="215" cy="25" r="10" fill="none" stroke="#888" stroke-width="2"/>
+  <rect x="205" y="20" width="14" height="10" rx="2" fill="#888"/>
+  
+  <!-- Header -->
+  <text x="20" y="70" fill="white" font-family="Poppins, sans-serif" font-weight="700" font-size="24">Hello, Kung 👋</text>
+  <text x="20" y="95" fill="#888" font-family="Inter, sans-serif" font-size="14">Capture your thoughts today</text>
+  
+  <!-- Quote Card -->
+  <rect x="20" y="120" width="220" height="140" rx="16" fill="url(#card)"/>
+  <text x="36" y="150" fill="rgba(255,255,255,0.9)" font-family="Inter, sans-serif" font-size="13" font-style="italic">"The only way to do great</text>
+  <text x="36" y="170" fill="rgba(255,255,255,0.9)" font-family="Inter, sans-serif" font-size="13" font-style="italic">work is to love what you do."</text>
+  <text x="36" y="240" fill="rgba(255,255,255,0.7)" font-family="Inter, sans-serif" font-size="11">— Steve Jobs</text>
+  
+  <!-- Section Header -->
+  <text x="20" y="295" fill="white" font-family="Poppins, sans-serif" font-weight="600" font-size="16">Recent Notes</text>
+  
+  <!-- Note Cards -->
+  <rect x="20" y="310" width="220" height="70" rx="12" fill="#252542"/>
+  <text x="36" y="335" fill="white" font-family="Inter, sans-serif" font-weight="600" font-size="14">Project Ideas</text>
+  <text x="36" y="358" fill="#888" font-family="Inter, sans-serif" font-size="12">New app concept for wellness...</text>
+  <text x="36" y="372" fill="#667EEA" font-family="Inter, sans-serif" font-size="10">Today</text>
+  
+  <rect x="20" y="390" width="220" height="70" rx="12" fill="#252542"/>
+  <text x="36" y="415" fill="white" font-family="Inter, sans-serif" font-weight="600" font-size="14">Daily Reflection</text>
+  <text x="36" y="438" fill="#888" font-family="Inter, sans-serif" font-size="12">Grateful for the small things...</text>
+  <text x="36" y="452" fill="#667EEA" font-family="Inter, sans-serif" font-size="10">Yesterday</text>
+  
+  <!-- Bottom Navigation -->
+  <rect x="0" y="470" width="260" height="50" fill="#1A1A2E"/>
+  <circle cx="65" cy="495" r="18" fill="#667EEA"/>
+  <text x="65" y="500" fill="white" font-family="Inter, sans-serif" font-size="16" text-anchor="middle">🏠</text>
+  <text x="130" y="500" fill="#888" font-family="Inter, sans-serif" font-size="16" text-anchor="middle">📝</text>
+  <text x="195" y="500" fill="#888" font-family="Inter, sans-serif" font-size="16" text-anchor="middle">⚙️</text>
+</svg>

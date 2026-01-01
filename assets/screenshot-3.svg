@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 520" width="260" height="520">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A2E"/>
+      <stop offset="100%" style="stop-color:#0D0D1A"/>
+    </linearGradient>
+    <linearGradient id="fab" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667EEA"/>
+      <stop offset="100%" style="stop-color:#764BA2"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="260" height="520" rx="32" fill="url(#bg3)"/>
+  
+  <!-- Header -->
+  <text x="20" y="50" fill="#888" font-family="Inter, sans-serif" font-size="14">← Back</text>
+  <text x="130" y="50" fill="white" font-family="Poppins, sans-serif" font-weight="600" font-size="16" text-anchor="middle">All Notes</text>
+  <text x="235" y="50" fill="#667EEA" font-family="Inter, sans-serif" font-size="18">+</text>
+  
+  <!-- Search Bar -->
+  <rect x="20" y="70" width="220" height="40" rx="12" fill="#252542"/>
+  <text x="40" y="95" fill="#888" font-family="Inter, sans-serif" font-size="14">🔍 Search notes...</text>
+  
+  <!-- Filter Tabs -->
+  <text x="20" y="135" fill="white" font-family="Inter, sans-serif" font-weight="600" font-size="14">All</text>
+  <rect x="15" y="140" width="20" height="2" fill="#667EEA"/>
+  <text x="60" y="135" fill="#888" font-family="Inter, sans-serif" font-size="14">Recent</text>
+  <text x="120" y="135" fill="#888" font-family="Inter, sans-serif" font-size="14">Favorites</text>
+  
+  <!-- Note Cards (Grid View) -->
+  <rect x="20" y="155" width="105" height="120" rx="12" fill="#252542"/>
+  <rect x="30" y="165" width="50" height="16" rx="8" fill="#667EEA" opacity="0.3"/>
+  <text x="55" y="177" fill="#667EEA" font-family="Inter, sans-serif" font-size="8" text-anchor="middle">Personal</text>
+  <text x="30" y="200" fill="white" font-family="Inter, sans-serif" font-weight="600" font-size="12">Dream Log</text>
+  <text x="30" y="220" fill="#888" font-family="Inter, sans-serif" font-size="9">Had an interesting</text>
+  <text x="30" y="232" fill="#888" font-family="Inter, sans-serif" font-size="9">dream about...</text>
+  <text x="30" y="260" fill="#667EEA" font-family="Inter, sans-serif" font-size="8">Jan 1, 2025</text>
+  
+  <rect x="135" y="155" width="105" height="120" rx="12" fill="#252542"/>
+  <rect x="145" y="165" width="40" height="16" rx="8" fill="#f093fb" opacity="0.3"/>
+  <text x="165" y="177" fill="#f093fb" font-family="Inter, sans-serif" font-size="8" text-anchor="middle">Work</text>
+  <text x="145" y="200" fill="white" font-family="Inter, sans-serif" font-weight="600" font-size="12">2025 Goals</text>
+  <text x="145" y="220" fill="#888" font-family="Inter, sans-serif" font-size="9">Launch the app,</text>
+  <text x="145" y="232" fill="#888" font-family="Inter, sans-serif" font-size="9">help community</text>
+  <text x="145" y="260" fill="#667EEA" font-family="Inter, sans-serif" font-size="8">Dec 31, 2024</text>
+  
+  <rect x="20" y="285" width="105" height="120" rx="12" fill="#252542"/>
+  <rect x="30" y="295" width="55" height="16" rx="8" fill="#10B981" opacity="0.3"/>
+  <text x="57" y="307" fill="#10B981" font-family="Inter, sans-serif" font-size="8" text-anchor="middle">Gratitude</text>
+  <text x="30" y="330" fill="white" font-family="Inter, sans-serif" font-weight="600" font-size="12">Thankful For</text>
+  <text x="30" y="350" fill="#888" font-family="Inter, sans-serif" font-size="9">Family, health,</text>
+  <text x="30" y="362" fill="#888" font-family="Inter, sans-serif" font-size="9">opportunities...</text>
+  <text x="30" y="390" fill="#667EEA" font-family="Inter, sans-serif" font-size="8">Dec 30, 2024</text>
+  
+  <rect x="135" y="285" width="105" height="120" rx="12" fill="#252542"/>
+  <rect x="145" y="295" width="40" height="16" rx="8" fill="#4facfe" opacity="0.3"/>
+  <text x="165" y="307" fill="#4facfe" font-family="Inter, sans-serif" font-size="8" text-anchor="middle">Ideas</text>
+  <text x="145" y="330" fill="white" font-family="Inter, sans-serif" font-weight="600" font-size="12">App Features</text>
+  <text x="145" y="350" fill="#888" font-family="Inter, sans-serif" font-size="9">Dark mode, sync,</text>
+  <text x="145" y="362" fill="#888" font-family="Inter, sans-serif" font-size="9">widgets...</text>
+  <text x="145" y="390" fill="#667EEA" font-family="Inter, sans-serif" font-size="8">Dec 28, 2024</text>
+  
+  <!-- FAB -->
+  <circle cx="210" cy="440" r="28" fill="url(#fab)"/>
+  <text x="210" y="448" fill="white" font-family="Inter, sans-serif" font-size="24" text-anchor="middle">+</text>
+  
+  <!-- Bottom Navigation -->
+  <rect x="0" y="470" width="260" height="50" fill="#1A1A2E"/>
+  <text x="65" y="500" fill="#888" font-family="Inter, sans-serif" font-size="16" text-anchor="middle">🏠</text>
+  <circle cx="130" cy="495" r="18" fill="#667EEA"/>
+  <text x="130" y="500" fill="white" font-family="Inter, sans-serif" font-size="16" text-anchor="middle">📝</text>
+  <text x="195" y="500" fill="#888" font-family="Inter, sans-serif" font-size="16" text-anchor="middle">⚙️</text>
+</svg>
